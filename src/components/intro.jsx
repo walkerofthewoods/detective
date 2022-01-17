@@ -1,11 +1,7 @@
-const text = 'The game is afoot';
+import caseData from "./data/cases";
 
 const Intro = () => {
-  return (
-    <div>
-      {text}
-    </div>
-  )
-}
+  return <div>{caseData.case1.intro}</div>;
+};
 
 export default Intro;
