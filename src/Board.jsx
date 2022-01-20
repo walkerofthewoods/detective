@@ -8,12 +8,21 @@
 
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-
+import styled from "styled-components";
 import { Directory, NavBar, Notes } from "./components";
+
+const CellFrame = styled.div`
+  background-color: greenyellow;
+  border-color: green;
+  /* display: inline-block; */
+  max-width: 750px;
+  max-height: 1100px;
+  margin: auto;
+`;
 
 const Board = () => {
   return (
-    <div>
+    <CellFrame>
       <Routes>
         <Route path="/notes" element={<Notes />}></Route>
         <Route path="/map">{/* <Map /> */}</Route>
@@ -23,7 +32,7 @@ const Board = () => {
         <Route path="/"></Route>
       </Routes>
       <NavBar />
-    </div>
+    </CellFrame>
   );
 };
 
