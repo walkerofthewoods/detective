@@ -3,10 +3,10 @@ import React from "react";
 
 const Notes = () => {
   return (
-    <div>
-      Introduction{"\n"}
-      {caseData.case1.intro}
-    </div>
+    <>
+      <h2>Introduction</h2>
+      <div>{caseData.case1.intro}</div>
+    </>
   );
 };
 
