@@ -1,5 +1,5 @@
 import React from "react";
-import caseData from "./data/cases";
+import caseData from "../data/cases";
 
 const Newspaper = () => {
   const articles = caseData.case1.newspaper.articles.map((issue) => {
