@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import { Directory, NavBar, Notes, Newspaper } from "./components";
+import { Directory, Map, NavBar, Notes, Newspaper } from "./components";
 
 const CellFrame = styled.div`
   max-width: 400px;
@@ -14,7 +14,7 @@ const Board = () => {
     <CellFrame>
       <Routes>
         <Route path="/notes" element={<Notes />}></Route>
-        <Route path="/map">{/* <Map /> */}</Route>
+        <Route path="/map" element={<Map />}></Route>
         <Route path="/paper" element={<Newspaper />}></Route>
         <Route path="/directory" element={<Directory />}></Route>
         <Route path="/chat">{/* <Chat /> */}</Route>

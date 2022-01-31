@@ -1,4 +1,4 @@
-import caseData from "./data/cases";
+import caseData from "../data/cases";
 import React from "react";
 
 const Notes = () => {
