@@ -1,10 +1,12 @@
 import React from "react";
-import { ReactComponent as MapSVG } from "../data/demo_map.svg";
+import mapSvg from "../data/demo_map.svg";
+// import { ReactComponent as MapSVG } from "../data/demo_map.svg";
 
 const Map = () => {
   return (
     <div>
-      <MapSVG />
+      <img src={mapSvg} alt="map" />
+      {/* <MapSVG /> */}
     </div>
   );
 };
