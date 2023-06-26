@@ -8,7 +8,7 @@ const DetectiveClient = Client({
   game: Detective,
   board: Board,
   multiplayer: Local({ persist: true }),
-  numPlayers: 1,
+  numPlayers: 2,
   // disableUndo: true,
 });
 

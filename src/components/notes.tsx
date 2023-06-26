@@ -1,6 +1,6 @@
 import caseData from "../data/cases";
 
-const Notes = (exploredLeads) => {
+const Notes = (exploredLeads: any) => {
   return (
     <>
       <h1>Introduction</h1>

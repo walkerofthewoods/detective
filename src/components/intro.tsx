@@ -1,4 +1,4 @@
-import caseData from "./data/cases";
+import caseData from "../data/cases.ts";
 
 const Intro = () => {
   return <div>{caseData.case1.intro}</div>;

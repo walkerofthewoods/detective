@@ -13,9 +13,9 @@ const Directory = () => {
       <p>Enter a directory address to follow a lead.</p>
       <div>
         <Input placeholder="directory number" width="150px" />
-        <RadioGroup>
+        <RadioGroup defaultValue="NW">
           <div className="flex items-center space-x-2">
-            <RadioGroupItem value="option-one" id="option-one" />
+            <RadioGroupItem value="NW" id="option-one" />
             <Label htmlFor="option-one">NW</Label>
           </div>
           <div className="flex items-center space-x-2">

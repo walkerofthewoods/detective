@@ -5,9 +5,11 @@ import type { Game, Move } from "boardgame.io";
 
 export interface MyGameState {
   // aka 'G', your game's state
+  leadsFollowed: string[];
+  lettersObtained: string[];
 }
 
-// const move: Move<MyGameState> = ({ G, ctx }) => {};
+// const followLead: Move<MyGameState> = ({ G, ctx }) => {};
 
 export const Detective: Game<MyGameState> = {
   //this is a react hook and needs to be in a react function
@@ -22,7 +24,7 @@ export const Detective: Game<MyGameState> = {
   },
 
   moves: {
-    followLead: (G, ctx, location) => {
+    followLead: (G: MyGameState, ctx, location: string) => {
       if (G.leadsFollowed.includes(location)) {
         return INVALID_MOVE;
       }
